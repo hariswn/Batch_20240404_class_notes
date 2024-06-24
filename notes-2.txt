@@ -1,0 +1,305 @@
+Operators:
+=========
+
+arthmetic operators:
+--------------------
++
+-
+/ 
+*
+%
+
+logical operators:
+------------------
+&& --> and
+
+|| ---- or
+
+! ---- not
+
+comparison operators:
+---------------------
+==  --> 2 == 3 -- F
+!=  --> not equality 
+<  ---> 2 < 3  --> T, 2 < 2 --> F
+>  ---> 2 > 3  --> F
+<= ---> 2 <= 2 --> T
+>=  --> 2 >= 2 --> T
+
+
+++ : incremental operator --> pre and post
+-- : decremental operator --> pre and post
+
+int i = 10;
+i++;
+print(i); // 11
+int i = 10;
+++i;
+print(i); // 11
+
+
+int j = 10;
+
+j += 10; 10 + 10--> 20
+
+j -= 15; 20 - 15 --> 5
+
+print(j);// 5
+
+ternary operator:
+----------------
+
+?:
+
+<expression> ? val1 : val2;
+
+
+Flow Controls:
+-============
+
+1. Conditional statments:
+-------------------------
+
+if
+else
+
+if else 
+
+switch
+
+
+if:
+---
+
+syntax:
+
+if (<boolean expression>) {
+	enter to the loop
+} else {
+	// if boolean expression return false then execute else part.
+}
+
+if(AT == SA) {
+}
+if(AT == CA) {
+}
+if(AT == FXA) {
+} 
+if(AT == JA) {
+}
+
+if(AT == SA) {
+}
+else if(AT == CA) {
+}
+else if(AT == FXA) {
+} 
+else if(AT == JA) {
+} else {
+// AT invalid
+}
+
+
+switch case:
+-------------
+
+switch (<primitive/enums/Strings>) {
+	case passing_variable_type:
+	break;
+	case passing_variable_type:
+	break;
+	default:
+	
+}
+
+
+example:
+int i = 2;
+switch(i) {
+	case 1:
+		print("one");
+		break;
+	case 2:
+		print("two");
+		break;
+	case 3:
+		print("three");
+		break;
+	default:
+		print("non-match");
+}
+
+
+static keyword:
+--------------
+
+1. we can use static keyword to the variables 
+2. we can use static keyword to the methods
+
+examples:
+
+public class AccountService {
+
+	public static double balance = 10000.15; // class level variable or instance variables
+	
+	
+	// instance methods or non-static methods
+	public static void deposite() {
+		System.out.println("I am deposite!");
+	}
+}
+
+public class AccountExecution {
+	
+	public void execute() {
+		
+		print(AccountService.balance);
+		AccountService.deposite();
+	}
+
+}
+
+public static void main(String[] args):
+---------------------------------------
+
+public static void main(String[] args) {
+
+}
+
+Loops:
+------
+for
+while
+do-while
+for-each
+
+for:
+----
+
+syntax:
+
+for (<variable initialization>;<condition_check>;<increment/decrement>) {
+
+}
+
+example:
+--------
+
+print 1 to 10 numbers:
+
+for(int i = 1; i < 10; i++) {
+	print(i);
+}
+
+-----------------assignments-----------------
+1. print 10 to 1 numbers
+2. print 1 to 10 but skip 5 and 7 numbers.
+3. print 2001 to 2030 numbers
+------------------------------------------------
+
+time complexity:
+
+O(1)
+
+sum() {
+int a = 10; -- O(1)
+int b = 20; --O(1)
+int c = a + b;
+print(c);
+for(int i = 1; i <= 10; i++) {
+	if(i == 5 || i == 6) {
+		break;
+	}
+	print(i);
+}
+}
+
+100 --> 1,2,3...100
+n ----> 1,2,3,..n
+
+break & continue:
+----------------
+
+
+inner loops:
+------------
+
+for loop --> O(n)
+
+
+for() { ---> O(n)
+	for() { ---> O(n)
+	
+	}
+}
+
+n * n ---> n2'
+
+examples:
+---------
+
+*
+**
+***
+****
+*****
+
+for(int i = 1; i <= 5; i++) { // rows
+	for(int j = 1; j <= 5; j++) { // columns
+		System.out.print("*");
+	}
+	System.out.println();
+}
+
+
+-----------------assignments-----------------
+1
+22
+333
+4444
+55555
+
+*****
+****
+***
+**
+*
+
+1. print 10 to 1 numbers
+2. print 1 to 10 but skip 5 and 7 numbers.
+3. print 2001 to 2030 numbers
+------------------------------------------------
+
+while:
+-----
+
+syntax:
+
+while(<boolean expression>) {
+
+}
+
+Q) what is the difference b/w for and while loops?
+
+examples:
+
+int i = 1;
+while(i <= 10) {
+print(i);
+i++;
+}
+
+--------------------
+
+do-while:
+--------
+
+do {
+
+} while(<boolean expression>)
+
+1 - 10 numbers 
+int i = 1;
+do {
+	print(i);
+} while(i >= 10)

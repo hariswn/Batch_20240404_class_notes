@@ -1,0 +1,144 @@
+javac: it used to compile java file
+
+java: it is used to run the binary file
+
+
+
+JDK - 
+JRE -
+JVM - 
+
+c, c++ : CLI & GUI
+
+------------------------------
+Data types:
+----------
+1. Primitives
+2. Non-Primitives
+
+1.Primitives:
+-------------
+byte, short, int, long, float, double, char, boolean
+
+...-3,-2,-1,0,1,2,3....
+...-3.0,-2.0,-1.0,0.0,1.0,2.0,3.0....
+true/false
+single charector -> 
+
+byte, short, int, long: numbers : 0 
+float, double : decimal data : 0.0
+char : : single space
+boolean: : false
+
+-----------------------------------------------
+Object -- class
+
+access modifiers:
+-----------------
+1. public
+2. protected
+3. private
+4. default
+-----------------
+
+syntax:
+
+<access_modifier> class <class_name> {
+	// methods & variables
+}
+
+Note:
+-----
+> applicable access modifiers: public and default
+> class name always starts with capital letter
+> class name contains more than one word each word starts with capital letter.
+
+example:
+
+public class Account {
+
+}
+
+Account.java -->
+
+javac & java
+
+javac Account.java --> binary file
+
+
+methods:
+--------
+
+syntax:
+
+<access_modifier> <return_type> <method_name>(<optionial_arguments>) {
+	// logic
+}
+
+Notes:
+-----
+> applicable access modifiers: all
+> return_type : both primitives & non-primitives data type
+> optionial_arguments: both primitives & non-primitives data types
+> method_name: method name always starts with lower case
+			   incase of method name contains more than one word, second word onwards we need to declare capital letter.
+		   
+> "void" : If you use void keyword means method not expecting any result.
+
+example:
+--------
+
+public int sumOfTwoNumbers(int a, int b, int c) {
+	c = a + b;
+	return c;
+}
+
+private void display() {
+	print("I am displaying");
+}
+
+
+Variables:
+----------
+
+three types of variables
+1. local variables / method level variables
+2. global variables / class level variables
+3. static variables
+
+
+syntax:
+------
+
+<access_modifier> <data_type> <variable_name> = <assignment_value>;
+
+notes:
+-----
+> applicable access modifiers: all (global/class level variables)
+> Local/method level variabels: only default access modifier is applicable
+> data_type : both primitives and non-primitives
+> variable_name: variable always starts with lower case
+				 second word onwards each starts with capital letter
+				 
+
+--------------- assignments-----------------
+write a class animal and write some methods with all applicable standards.
+
+-----------------------------------------------------
+
+examples:
+--------=-
+
+private int var; // variable declaration & default value can be applicable here. i.e zero
+
+protected long count = 2; // fully initalized variable
+
+var = 100;
+
+public void cal() {
+	double amount;
+	
+	amount = 10.00;
+	
+}
+

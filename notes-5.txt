@@ -1,0 +1,16 @@
+Object class:
+-------------
+
+It is a super class for all the classes in java.
+
+public final native Class<?> getClass();
+public native int hashCode();
+public boolean equals(Object obj)
+protected native Object clone()
+public String toString() 
+public final native void notify()
+public final void wait()
+protected void finalize()
+
+
+== : memory address comparision

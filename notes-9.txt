@@ -1,0 +1,24 @@
+public void display(int a, int b) {
+	print(a);
+	print(b);
+}
+
+(int a, int b) {
+	print(a);
+	print(b);
+}
+
+(a, b) -> {
+	print(a);
+	print(b);
+}
+
+-------------------- funcational interfaces ------------
+
+@FuncationalInterface
+
+-------------------stream api-------------------
+
+1. intermediate operations
+2. terminal operations
+------------------------------------------------

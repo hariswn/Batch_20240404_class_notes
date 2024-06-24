@@ -1,0 +1,200 @@
+OOPS:
+----
+Abstraction
+Encapsulation
+Inheritance
+Polymorphism
+
+Abstraction:
+------------
+hide the implementation and highlight the features
+
+what is the diff b/w abstract and abstraction?
+
+class Car {
+
+}
+
+Car c = new Car();
+Abstract class:
+
+syntax:
+
+<access_modifer> abstract class <class_name> {
+
+}
+
+abstract class Car {
+	public abstract double getPrice();
+	
+	public double getPrice() {
+		return 35.00;
+	}
+	
+	public static double getPrice() {
+		return 35.00;
+	}
+}
+
+Car c = new Car();// wrong
+Notes:
+------
+> we cann't create objects to the abstract class.
+> abstract classes are designed for the code reusability.
+
+methods with abstract keyword:
+------------------------------
+
+class Apple {
+	public double getPrice() {
+		return 35.00;
+	}
+	
+	public static double getPrice() {
+		return 35.00;
+	}	
+}
+
+Apple a = new Apple();
+a.getPrice();
+normal methods (OR) concrete methods (OR) instance methods
+static methods
+abstract methods
+
+> abstract methods are having only declarations.
+
+<access_modifer> abstract <return_type> <method_name>(<optional_arguments>);
+
+Notes:
+-----
+applicable access_modifers: public, protected and defualt
+
+example:
+-------
+
+public abstract double getPrice();
+
+we can write abstract methods in abstract classes or interfaces.
+
+interface:
+----------
+
+syntax:
+
+<access_modifer> interface <interface_name> {
+	// here we declare only abstract methods
+}
+
+Note:
+----
+> applicable access_modifers: defualt and public
+> interface name: same as class name coding standard
+
+example:
+
+public interface Animal {
+	String getName();
+	void run();
+	
+	// in interface we can create a variables
+	create constants
+	int a = 10;
+}
+
+
+Encapsulation:
+--------------
+hide the data.
+
+Object --> variables (in these variables we can store the data).
+
+
+public class Car {
+	private String name;
+	private double price;
+	private String brand;
+	
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getName() {
+		return this.name;
+	}
+}
+
+Car c = new Car();
+c.setName("BMW");
+
+
+Inheritance:
+-----------
+IS-A
+Has-A
+
+
+single level 
+multi level 
+heirarichal level
+
+Polymorphism:
+-------------
+
+two types of polymorphisms
+
+1. static polymorphism / method overloading
+2. dynamic polymorphism / method overriding
+
+method overloading:
+------------------
+> count of parameters
+> order of parameters
+> type of parameters
+
+class AccountService {
+	
+	public void regirsterAccount(int accountNum, String accName) {
+		print("registered account number, accountNumber : " + accountNumber);
+	}
+	
+	public void regirsterAccount(String accName, int accountNum) {
+		print("registered account number, accountNumber : " + accountNumber);
+	}
+	
+	public void regirsterAccount(String accName, String accountNum) {
+		print("registered account number, accountNumber : " + accountNumber);
+	}
+	
+	public void regirsterAccount(String accName) {
+		print("registered account number, accountNumber : " + accountNumber);
+	}
+
+}
+
+
+public void regirsterAccount(String accName, String accountNum) {
+        System.out.println("registered account number, accountNumber : " );
+}
+
+public void regirsterAccount(String accountNum, String accName) {
+	System.out.println("registered account number, accountNumber : " );
+}
+
+
+regirsterAccount("accName", "accountNum");
+
+
+abstract class
+interface
+
+----------------------------------------
+Wrapper classes:
+----------------
+byte  ----> Byte
+short ----> Short
+int   ----> Integer
+long  ----> Long
+float ----> Float
+double ---> Double
+boolean --> Boolean
+char   ---> Charector
+-------------------------

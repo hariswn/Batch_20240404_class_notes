@@ -1,0 +1,21 @@
+
+1. Gather database configuration details
+2. Data base table design / verify the table
+3. Create a entity class
+
+
+
+what are the scopes available in Spring? or Tell me about Spring bean scopes?
+
+Singleton --> default spring bean scope
+prototype
+request
+session
+
+Http methods:
+
+GET -- to read data 
+POST -- to insert data
+PUT --- to update data
+DELETE -- to delete data
+

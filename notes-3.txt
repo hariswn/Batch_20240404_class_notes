@@ -1,0 +1,63 @@
+Arrays:
+------
+
+primitive --> 8
+non-primitive --> 
+
+data structure
+it is used to store the data
+collection of homo 
+it stores bulk of data
+
+syntax:
+------
+
+<data_type>[] <variable_name> = new <data_type>[<size>]; // create an array syntax
+
+example:
+
+int[] studentNumberArr = new int[10];
+
+int[] arr = {201, 202, 203...210};
+
+insert & update & remove & read
+
+insert:
+-------
+studentNumberArr[index_number] = value;
+
+studentNumberArr[0] = 101;
+studentNumberArr[1] = 102;
+studentNumberArr[2] = 103;
+...
+studentNumberArr[9] = 110;
+studentNumberArr[10] = 111;
+
+studentNumberArr[0] = 1001;
+
+remove:
+-------
+studentNumberArr[3] = -1;
+
+read:
+-----
+print(studentNumberArr[2]);
+
+for, while and do-while 
+
+length
+print(studentNumberArr.length); // 10
+
+for(int i = 0; i < studentNumberArr.length1; i++) {
+	print(studentNumberArr[i]);
+}
+
+--------------------assignment------------------
+create an array and insert random values and read and print.
+-----------------------------------------------------
+
+
+
+
+
+

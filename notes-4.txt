@@ -1,0 +1,19 @@
+String:
+-------
+
+non-primitive
+we can store group of charectors
+It's an immutable
+
+creation:
+
+L/M
+G/C/I
+S
+
+with new keyword
+and literal
+
+String s = new String("java"); // new keyword
+String s = "java"; // literal
+

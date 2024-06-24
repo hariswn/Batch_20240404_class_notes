@@ -1,0 +1,46 @@
+Exceptions:
+-----------
+Exceptions --- Errors
+
+1. Checked exceptions / compiletime exceptions
+2. Unchecked exceptions / runtime exceptions
+
+
+handle the exceptions:
+
+1. by using try-catch blocks
+2. by using throws keyword
+
+syntax:
+
+try {
+ // write business logic
+} catch(<Exception> e) {
+	// print the exception
+	e.printStackTrace();
+}
+
+custom - runtime exception
+custom - compiletime exception
+
+Exception
+
+RuntimeException
+
+public class AccountNotFoundException extends RuntimeException {
+
+}
+
+
+synchronized keyword:
+---------------------
+
+class AccountService {
+
+	public void deposite(double amount) {
+		synchronized {
+			// logic here to deposite the amount
+		}
+		
+	}
+}

@@ -1,0 +1,43 @@
+Collection Framework:
+---------------------
+> It's having growable nature
+
+List: 
+-----
+1. insertion order is preserved.
+2. duplicate elements are allowed
+
+Set:
+----
+1. insertion order is not preserved
+2. duplicate elements are not allowed
+
+ArrayList:
+---------
+> AL works on indexed based
+> AL can store data in arrays. 
+add:
+get(index)
+
+
+LinkedList:
+-----------
+
+
+HashSet:
+--------
+
+
+LinkedHashSet:
+--------------
+
+
+Map:
+---
+
+
+Serialization:
+-------------
+> marker interface.
+
+
